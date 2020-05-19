@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Drink Book",
+    "slug": "app_Middle",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/icon/App-login.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#fae7cb"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+    "drink": [
+        {
+            "day": "04-25",
+            "detail": [
+                {
+                    "name": "紅茶",
+                    "capacity": "500",
+                    "sweet": "半糖",
+                    "calories": "300",
+                    "sugar": "45",
+                    "sport": "0.8",
+                    "photo": "https://raw.githubusercontent.com/wendy556609/APP_Middle/master/assets/icon/img.png",
+                    "store": "7-11",
+                    "cup": "1",
+                    "ice":"全冰"
+                },
+                {
+                    "name": "綠茶",
+                    "capacity": "700",
+                    "sweet": "微糖",
+                    "calories": "200",
+                    "sugar": "20",
+                    "sport": "0.5",
+                    "photo": "https://raw.githubusercontent.com/wendy556609/APP_Middle/master/assets/icon/img.png",
+                    "store": "鮮茶道",
+                    "cup": "1",
+                    "ice":"全冰"
+                },
+                {
+                    "name": "奶茶",
+                    "capacity": "500",
+                    "sweet": "全糖",
+                    "calories": "600",
+                    "sugar": "60",
+                    "sport": "1.5",
+                    "photo": "https://raw.githubusercontent.com/wendy556609/APP_Middle/master/assets/icon/img.png",
+                    "store": "全家",
+                    "cup": "1",
+                    "ice":"少冰"
+                }
+            ]
+        },
+        {
+            "day": "04-24",
+            "detail": [
+                {
+                    "name": "紅茶",
+                    "capacity": "500",
+                    "sweet": "半糖",
+                    "calories": "300",
+                    "sugar": "45",
+                    "sport": "0.8",
+                    "photo": "https://raw.githubusercontent.com/wendy556609/APP_Middle/master/assets/icon/img.png",
+                    "store": "7-11",
+                    "cup": "1",
+                    "ice":"全冰"
+                },
+                {
+                    "name": "奶茶",
+                    "capacity": "500",
+                    "sweet": "全糖",
+                    "calories": "600",
+                    "sugar": "60",
+                    "sport": "1.5",
+                    "photo": "https://raw.githubusercontent.com/wendy556609/APP_Middle/master/assets/icon/img.png",
+                    "store": "全家",
+                    "cup": "1",
+                    "ice":"少冰"
+                },
+                {
+                    "name": "綠茶",
+                    "capacity": "700",
+                    "sweet": "微糖",
+                    "calories": "200",
+                    "sugar": "20",
+                    "sport": "0.5",
+                    "photo": "https://raw.githubusercontent.com/wendy556609/APP_Middle/master/assets/icon/img.png",
+                    "store": "鮮茶道",
+                    "cup": "1",
+                    "ice":"全冰"
+                },
+                {
+                    "name": "奶茶",
+                    "capacity": "500",
+                    "sweet": "全糖",
+                    "calories": "600",
+                    "sugar": "60",
+                    "sport": "1.5",
+                    "photo": "https://raw.githubusercontent.com/wendy556609/APP_Middle/master/assets/icon/img.png",
+                    "store": "全家",
+                    "cup": "1",
+                    "ice":"少冰"
+                },
+                {
+                    "name": "紅茶",
+                    "capacity": "500",
+                    "sweet": "半糖",
+                    "calories": "300",
+                    "sugar": "45",
+                    "sport": "0.8",
+                    "photo": "https://raw.githubusercontent.com/wendy556609/APP_Middle/master/assets/icon/img.png",
+                    "store": "7-11",
+                    "cup": "1",
+                    "ice":"全冰"
+                }
+            ]
+        }
+    ]
+}
