@@ -46,7 +46,7 @@ const App = () => {
     onStateChange={(state) =>
       AsyncStorage.setItem(PERSISTENCE_KEY, JSON.stringify(state))
     }>
-      <Stack.Navigator initialRouteName="Main">
+      <Stack.Navigator>
         <Stack.Screen name="Main"
           component={MainScreen}
           options={() => ({
