@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, HeaderTitle } from '@react-navigation/stack';
-
+import { AsyncStorage } from 'react-native';
 import { } from "./src/stores/drinkStore";
 
 import { StoreProvider, StoreContext } from "./src/stores/drinkStore";
@@ -12,17 +12,40 @@ import AnalysisScreen from "./src/screens/AnalysisScreen"
 import DetailScreen from "./src/screens/DetailScreen"
 import AddScreen from "./src/screens/AddScreen"
 
+const PERSISTENCE_KEY = "NAVIGATION_STATE";
 const Stack = createStackNavigator();
 
 const App = () => {
   const { drinkState } = useContext(StoreContext);
   const [drinks, setDrinks] = drinkState;
 
+  const [initialNavigationState, setInitialNavigationState] = React.useState();
+
   const { drinkTempState } = useContext(StoreContext);
   const [drinkTemp, setDrinkTemp] = drinkTempState;
   const ref = React.useRef(null);
+
+  React.useEffect(() => {
+    async function loadResourcesAndDataAsync() {
+      try {
+        const savedStateString = await AsyncStorage.getItem(PERSISTENCE_KEY);
+        const state = JSON.parse(savedStateString);
+        setInitialNavigationState(state);
+      } catch (e) {
+        console.warn(e);
+      } finally {
+
+      }
+    }
+    loadResourcesAndDataAsync();
+  }, []);
+
   return (
-    <NavigationContainer ref={ref}>
+    <NavigationContainer ref={ref}
+    initialState={initialNavigationState}
+    onStateChange={(state) =>
+      AsyncStorage.setItem(PERSISTENCE_KEY, JSON.stringify(state))
+    }>
       <Stack.Navigator initialRouteName="Main">
         <Stack.Screen name="Main"
           component={MainScreen}
